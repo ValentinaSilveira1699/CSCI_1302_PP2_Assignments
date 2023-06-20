@@ -1,0 +1,43 @@
+CSCI 1302 Assignment 1: Review of Java program development (including, but not limited to, selections, repetitions, methods, arrays, objects)
+Due: Jun 22, Thursday, 2023, 11:30pm
+
+1.	(50pts) Write a Java program A1p1.java with a public class A1p1 and no named packages that takes one command line argument assumed to be a positive integer n. The program should prompt the user to input n integers from stdin (one per line) and store all of them in an array. After the program reads in the input integers, it should print these integers in the array in original order and update the same array by storing the triples of the array elements in reverse order. Then the program should print the triples in the array (from first to last). You can consider designing a method to update the array to store triples. Two sample runs can look like the following (blue color means those are typed by the user; note that n can be any number and 4 or 3 are just examples):
+[kwang@computer][~/temp]$ java A1p1 4
+2
+8
+5
+12
+The original integers are:
+2,8,5,12
+The triples in reverse order are:
+36,15,24,6
+[kwang@computer][~/temp]$ java A1p1 3
+2
+-3
+7
+The original integers are:
+2,-3,7
+The triples in reverse order are:
+21,-9,6
+
+If you run the program with standard input redirection, a sample run can look like the following (assuming the text file someNumbers.txt contains the 2,8,5,12 on four separate lines):
+[kwang@computer][~/temp]$ java A1p1 4 < someNumbers.txt
+The original integers are:
+2,8,5,12
+The squares in reverse order are:
+36,15,24,6
+
+2.	(50pts) Write a Java program A1p2.java with a public class A1p2 and no named packages that takes one command line argument assumed to be a positive integer n. The program should prompt the user to input n integers from stdin (one per line) and store all of them in an array. After the program reads in the input integers, it should print the largest odd input integer and the smallest even input integer. You can assume that at least two integers will be input from stdin (i.e. n>=2) and at least one even integer and at least one odd integer will be input from stdin. (Can you imagine how your program would function if no even integer or no odd integer is input from stdin?) You can consider designing additional method(s) besides main to implement the functionality. A sample run can look like the following (blue color means those are typed by the user; note that n can be any number and 5 is just an example):
+[kwang@computer][~/temp]$ java A1p2 5
+2
+-3
+8
+5
+12
+The largest odd input integer is 5.
+The smallest even input integer is 2.
+
+If you run the program with standard input redirection, a sample run can look like the following (assuming the text file someNumbers2.txt contains the 2,-3,8,5,12 on five separate lines):
+[kwang@computer][~/temp]$ java A1p2 5 < someNumbers2.txt
+The largest odd input integer is 5.
+The smallest even input integer is 2.
