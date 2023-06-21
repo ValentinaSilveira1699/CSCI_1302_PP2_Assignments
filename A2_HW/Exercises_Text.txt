@@ -1,0 +1,52 @@
+1.	(50pts) Write a Java program A2p1.java with a public class A2p1 and no named packages that takes one command line argument assumed to be a positive integer n. The program should prompt the user to input n strings that do not contain spaces from stdin (one per line) and store all of them in an array. After the program reads in the input strings, it should print the longest input strings and shortest strings in original order. Note that if there are more than one longest or shortest string they should all be printed. You can consider designing additional method(s) besides main to implement the functionality. Two sample runs can look like the following (blue color means those are typed by the user; note that n can be any number and 5 or 3 are just examples):
+[kwang@computer][~/temp]$ java A2p1 5
+2xx
+8abc
+ef
+5xyz
+12
+The longest input strings are:
+8abc
+5xyz
+The shortest input strings are:
+ef
+12
+
+[kwang@computer][~/temp]$ java A2p1 3
+a2
+b3c
+7
+The longest input strings are:
+b3c
+The shortest input strings are:
+7
+2.	(50pts) Write a Java program A2p2.java with a public class A2p2 and no named packages that takes one command line argument assumed to be a positive integer n. The program should prompt the user to input n integers from stdin (one per line) and store all of them in an array. After the program reads in the input integers, it should print these integers in original order and update the array by reversing all triplets in the array and then print all the updated array elements. If n is not a multiple of 3, then the final one or two integers that cannot form a triplet in the array should be kept intact. You can consider designing additional method(s) besides main to implement the functionality. (Problem 20 in Prerequisite_Programming_Assignments is similar to this one and you may review that first.) Two sample runs can look like the following (blue color means those are typed by the user; note that n can be any number and 5 or 6 are just examples):
+[kwang@computer][~/temp]$ java A2p2 5
+2
+-3
+8
+5
+12
+The original integers are:
+2,-3,8,5,12
+The triplets reversed integers are:
+8,-3,2,5,12
+[kwang@computer][~/temp]$ java A2p2 6
+2
+-3
+8
+5
+12
+7
+The original integers are:
+2,-3,8,5,12,7
+The triplets reversed integers are:
+8,-3,2,7,12,5
+If you run the program with standard input redirection, a sample run can look like the following (assuming the text file someNumbers.txt contains the 2,-3,8,5,12 on five separate lines):
+[kwang@computer][~/temp]$ java A2p2 5 < someNumbers.txt
+The original integers are:
+2,-3,8,5,12
+The triplets reversed integers are:
+8,-3,2,5,12
+
+Likewise, you can also run the program A2p1 with standard input redirection.
