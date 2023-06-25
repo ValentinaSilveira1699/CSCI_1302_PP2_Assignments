@@ -1,0 +1,55 @@
+Write a Java program A3p1.java with a public class A3p1 and no named packages. The program should prompt the user to input the information of several students from stdin and then display the information of those students to stdout in the input order (the number of students should be obtained from the first command line argument). The program should also report the oldest female students and youngest male students. There may be ties and it should report all of them. It is best to design an additional class Student even though it is possible to implement these functionalities without such an additional class besides the class A3p1. A sample run looks like the following (blue color means those are typed by the user):
+[kwang@computer][~/temp]$ java A3p1 4
+Enter information for student 1:
+Name: Tom
+Sex('F' or 'M'): M
+Age: 17
+
+Enter information for student 2:
+Name: Jerry
+Sex('F' or 'M'): M
+Age: 18
+
+Enter information for student 3:
+Name: Alice
+Sex('F' or 'M'): F
+Age: 19
+
+Enter information for student 4:
+Name: Rose
+Sex('F' or 'M'): F
+Age: 21
+
+The students you entered are:
+Tom is a male student of age 17.
+Jerry is a male student of age 18.
+Alice is a female student of age 19.
+Rose is a female student of age 21.
+
+The oldest female students are:
+Rose (age 21).
+
+The youngest male students are:
+Tom (age 17).
+
+If you run the program with standard input redirection, a sample run can look like the following (assuming the text file someStudents.txt contains the Tom,M,17,Jerry,M,18,Alice,F,19,Rose,F,21 on twelve separate lines):
+[kwang@computer][~/temp]$ java A3p1 4 < someStudents.txt
+Enter information for student 1:
+Name: Sex('F' or 'M'): Age:
+Enter information for student 2:
+Name: Sex('F' or 'M'): Age:
+Enter information for student 3:
+Name: Sex('F' or 'M'): Age:
+Enter information for student 4:
+Name: Sex('F' or 'M'): Age:
+The students you entered are:
+Tom is a male student of age 17.
+Jerry is a male student of age 18.
+Alice is a female student of age 19.
+Rose is a female student of age 21.
+
+The oldest female students are:
+Rose (age 21).
+
+The youngest male students are:
+Tom (age 17).
